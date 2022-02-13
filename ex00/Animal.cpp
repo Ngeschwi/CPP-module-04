@@ -14,6 +14,8 @@ Animal::Animal(Animal const & src)
 
 Animal &	Animal::operator=(Animal const & rhs)
 {
+	if (this != &rhs)
+		this->type = rhs.getType();
 	return *this;
 }
 
@@ -24,6 +26,12 @@ std::string	Animal::getType(void) const
 
 void	Animal::makeSound(void) const
 {
+	if (!(this->getType().compare("Cat")))
+		std::cout << "Miaou !" << std::endl;
+	else if (!(this->getType().compare("Dog")))
+		std::cout << "Woaf !" << std::endl;
+	else
+		std::cout << "unknow sound !" << std::endl;
 	return ;
 }
 

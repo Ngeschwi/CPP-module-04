@@ -7,7 +7,7 @@ OBJS	=	$(SRCS:.cpp=.o)
 
 LINK	=	-I/Animal.hpp -I/Dog.hpp -I/Cat.hpp
 
-NAME	=	fragtrap
+NAME	=	Animal
 CC		=	clang++
 CFLAGS	=	-Wall -Wextra -Werror
 RM		=	rm -rf
