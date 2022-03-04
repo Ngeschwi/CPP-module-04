@@ -20,6 +20,12 @@ Cat &	Cat::operator=(Cat const & rhs)
 	return *this;
 }
 
+void	Cat::makeSound(void) const
+{
+	std::cout << "Miaou !" << std::endl;
+	return ;
+}
+
 Cat::~Cat(void)
 {
 	std::cout << "Destructor called" << std::endl;

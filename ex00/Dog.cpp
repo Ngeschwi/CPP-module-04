@@ -20,6 +20,12 @@ Dog &	Dog::operator=(Dog const & rhs)
 	return *this;
 }
 
+void	Dog::makeSound(void) const
+{
+	std::cout << "Ouaf !" << std::endl;
+	return ;
+}
+
 Dog::~Dog(void)
 {
 	std::cout << "Destructor Dog called" << std::endl;
