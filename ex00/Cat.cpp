@@ -28,6 +28,6 @@ void	Cat::makeSound(void) const
 
 Cat::~Cat(void)
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor Cat called" << std::endl;
 	return ;
 }
