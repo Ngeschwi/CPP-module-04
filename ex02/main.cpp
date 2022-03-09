@@ -21,12 +21,6 @@ int	 main()
 		animal[i]->makeSound();
 	}
 
-	// std::cout << "idea n°50, animal n°1 : " << animal[0]->Brain->getIdeas(50) << std::endl;
-	// std::cout << "idea n°50, animal n°2 : " << animal[1]->Brain->getIdeas(50) << std::endl;
-	// animal[0]->Brain->setIdeas("salut", 50);
-	// std::cout << "idea n°50, animal n°1 : " << animal[0]->Brain->getIdeas(50) << std::endl;
-	// std::cout << "idea n°50, animal n°2 : " << animal[1]->Brain->getIdeas(50) << std::endl;
-
 	for (size_t i = 0; i < nbr; i++)
 	{
 		delete animal[i];

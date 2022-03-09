@@ -3,7 +3,7 @@
 Brain::Brain(void)
 {
 	std::cout << "Default constructor Brain called" << std::endl;
-	this->setAllIdeas("hello");
+	this->setBrain("hello");
 	return ;
 }
 
@@ -28,7 +28,7 @@ Brain &	Brain::operator=(Brain const & rhs)
 	return *this;
 }
 
-void	Brain::setAllIdeas(std::string idea)
+void	Brain::setBrain(std::string idea)
 {
 	int	i = 0;
 	while (i < 100)
